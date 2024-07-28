@@ -253,6 +253,7 @@ editEmployeeForm.addEventListener("submit", async (e) => {
           profileImageURL: newImageURL,
         });
       }
+      alert("Employee data has been updated successfully.!");
     } else {
       // Update employee document without changing image
       await updateDoc(doc(db, "employees", id), {
@@ -268,9 +269,11 @@ editEmployeeForm.addEventListener("submit", async (e) => {
     }
 
     modal.style.display = "none";
+    alert("Employee data has been updated successfully.!");
     fetchEmployees(); // Refresh the employee list
   } catch (error) {
     console.error("Error updating employee:", error);
+    alert("Error updating employee.!");
   }
 });
 
