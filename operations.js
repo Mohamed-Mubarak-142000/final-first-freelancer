@@ -7,25 +7,9 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js";
 import {
   getFirestore,
-  collection,
-  getDocs,
   getDoc,
-  deleteDoc,
   doc,
-  updateDoc,
-  query,
-  where,
-  orderBy,
-  startAt,
-  endAt,
 } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
-import {
-  getStorage,
-  ref,
-  uploadBytes,
-  getDownloadURL,
-  deleteObject,
-} from "https://www.gstatic.com/firebasejs/10.12.4/firebase-storage.js";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -48,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     Admin: document.getElementById("adminItem"),
     Marketing: document.getElementById("marketingItem"),
     Sales: document.getElementById("salesItem"),
-    Accounting: document.getElementById("accountingItem"),
+    Accounting: document.getElementById("accoutingItem"),
     Operations: document.getElementById("operationsItem"),
     Logs: document.getElementById("logsItem"),
     Development: document.getElementById("developmentItem"),
